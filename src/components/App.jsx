@@ -28,6 +28,7 @@ export const App = () => {
         stats={userData.stats}
       />
       <Statistics
+        key={stats.id}
         stats={stats}
       />
       <FriendList friends={upcomingFriends}
