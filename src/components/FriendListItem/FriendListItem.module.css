@@ -1,15 +1,32 @@
 .item {
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding-left: 10px;
+    box-shadow: 0 0 1em;
+    border-radius: 3px;
 }
 
-.status {
-    text-decoration: none;
+.statusOnline,
+.statusOffline {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 15px 0 15px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.statusOffline {
+    background-color: red;
 }
 
 .avatar {
-    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .name {
-    
+    font-size: 24px;
+    font-weight: 600;
 }

@@ -9,16 +9,7 @@ import upcomingTransactions from './TransactionHistory/transactions.json';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#e7ecf2',
-        color: '#010101'
-      }}
-    >
+    <div>
       <SocialProfile
         key={userData.tag}
         avatar={userData.avatar}
@@ -27,14 +18,11 @@ export const App = () => {
         location={userData.location}
         stats={userData.stats}
       />
-      <Statistics
-        key={stats.id}
-        stats={stats}
-      />
-      <FriendList friends={upcomingFriends}
-      />
-      <TransactionHistory items={upcomingTransactions}
-      />
+      <Statistics title="" stats={stats} />
+      <FriendList friends={upcomingFriends} />
+      <TransactionHistory items={upcomingTransactions} />
     </div>
   );
 };
+
+//<Statistics key={stats.id} stats={stats} />
